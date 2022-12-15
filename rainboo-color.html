@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Rainbow Colors</title>
+    
+</head>
+<body>
+	
+	<form>
+	  <select class="selectitem" onchange='changecolor(this)'>
+		<option value="RC">Select Color</option>
+		<option value="Red">Red</option>
+		<option value="Green">Green</option>
+		<option value="Violet">Violet</option>
+		<option value="Blue">Blue</option>
+		<option value="Yellow">Yellow</option>
+		<option value="Orange">Orange</option>
+		<option value="Indigo">Indigo</option>
+	  </select>
+	</form> 
+
+	<script>
+		function changecolor(rainbow){
+			document.body.style.backgroundColor=rainbow.value;
+			console.log(rainbow.value);
+		}
+	</script>
+	<!-- <input type="text" id="colorinput">
+	<button value="changecolor" onclick="colorFunction()">Change color</button>
+		
+	<script>
+		function colorFunction() {
+			let bodycolor= document.getElementById('colorinput');
+			document.body.style.backgroundColor=bodycolor.value
+		}
+	</script> -->
+</body>
+</html>
